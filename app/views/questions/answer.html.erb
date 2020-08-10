@@ -1,0 +1,13 @@
+<banner>Stupid Coaching</banner>
+<br>
+<%= @questions %>
+<br>
+<%= if @questions == "Hello"
+      "Great!"
+    elsif @questions == "What time is it?"
+      "Silly question, get dressed and go to work!"
+    else
+      "I don't care, get dressed and go to work!"
+    end %>
+<br>
+<%= link_to "Ask again!", ask_path %>
